@@ -1,0 +1,29 @@
+[
+    {
+        "name":"ENIMRobots",
+        "description":"ENIMRobots",
+        "img":"src/assets/event1.jpg",
+        "price":30,
+        "nbTickets":10,
+        "nbParticipants":10,
+        "like":false
+    },
+    {
+        "name":"ENISO Integration Week",
+        "description":"ENISO Integration Week",
+        "img":"src/assets/event2.jpg",
+        "price":15,
+        "nbTickets":4,
+        "nbParticipants":30,
+        "like":false
+    },
+    {
+        "name":"RoboCup ENSI",
+        "description":"RoboCup ENSI",
+        "img":"src/assets/event3.jpg",
+        "price":7,
+        "nbTickets":20,
+        "nbParticipants":35,
+        "like":false
+    }
+]

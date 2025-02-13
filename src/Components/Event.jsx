@@ -31,8 +31,8 @@ function Event(props){
                     <img src={img} height="300px" width="300px"/>
                     <h1>Event Name:{name}</h1>
                     <p>Price:{price}</p>
-                    <p>Number of Tickets:{nbTickets}</p>
-                    <p>Number of Participants:{nbParticipants}</p>
+                    <p>Number of Tickets:{tickets}</p>
+                    <p>Number of Participants:{participants}</p>
                     <Button disabled={0} onClick={buy}>Book an event</Button>
                     <Button onClick={likeEvent}>Like</Button>
                 </div>

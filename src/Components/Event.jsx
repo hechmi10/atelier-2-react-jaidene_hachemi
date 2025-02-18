@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { Alert, Button } from 'react-bootstrap';
 
 function Event(props){
-    let {name,description,img,price,nbTickets,nbParticipants,like}=props
+    let {name,img,price,nbTickets,nbParticipants,like}=props
     let [tickets,setTickets]=useState(nbTickets);
     let [participants,setParticipants]=useState(nbParticipants)
     let [image,setImage]=useState(img);
@@ -13,7 +13,8 @@ function Event(props){
         setParticipants(participants+1);
         <Alert onDurationChange={20}>Event booked</Alert>
         if(tickets==0){
-            setImage("src/assets/soldOut.jpg");
+            image='src/assets/soldOut.jpg'
+            setImage(image);
             console.log("Sold Out");
         }
         console.log("Event booked");

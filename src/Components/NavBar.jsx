@@ -1,11 +1,15 @@
-import { NavLink } from "react-bootstrap"
+import { Navbar } from "react-bootstrap"
+import {NavLink} from "react-router-dom"
 
 function NavigationBar(){
     return(
 
-        <NavLink to={({isActive})=>(isActive?"active":"")}>
+        <Navbar>
+         <NavLink to="/" className={({isActive})=>(isActive ? "active":"")}>
             Events
-        </NavLink>
+         </NavLink>
+         </Navbar>
+        
     )
 }
 export default NavigationBar

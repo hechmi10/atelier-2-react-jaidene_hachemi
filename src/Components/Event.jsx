@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import { useState } from 'react'
 import { Alert, Button } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
 function Event(props){
     let {name,img,price,nbTickets,nbParticipants,like}=props
@@ -11,9 +12,9 @@ function Event(props){
     let buy=()=>{
         setTickets(tickets-1);
         setParticipants(participants+1);
-        <Alert onDurationChange={20}>Event booked</Alert>
+        <Alert onDurationChange={2}>Event booked</Alert>
         if(tickets==0){
-            image='src/assets/soldOut.jpg'
+            image='../images/soldOut.jpg'
             setImage(image);
             console.log("Sold Out");
         }
@@ -25,17 +26,17 @@ function Event(props){
     }
     return(
         <>
-        <Alert onDurationChange={30}>Hey welcome to Engineer School Events</Alert>
+        <Alert onDurationChange={3}>Hey welcome to Engineer School Events</Alert>
         <div className="card">
             <div className="row">
                 <div className="col">
                     <img src={img} height="300px" width="300px"/>
-                    <h1>Event Name:{name}</h1>
+                    <h1>Event Name:<NavLink to={`/details/${name}`} className={({isActive})=>(isActive?"active":"")}>{name}</NavLink></h1>
                     <p>Price:{price}</p>
                     <p>Number of Tickets:{tickets}</p>
                     <p>Number of Participants:{participants}</p>
                     <Button disabled={0} onClick={buy}>Book an event</Button>
-                    <Button onClick={likeEvent}>Like</Button>
+                    <Button onClick={likeEvent}>{likeEvent?"Like":"Dislike"}</Button>
                 </div>
             </div>
         </div>

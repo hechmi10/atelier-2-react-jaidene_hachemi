@@ -1,4 +1,4 @@
-[
+{"events":[
     {
         "id":1,
         "name":"ENIMRobots",
@@ -29,4 +29,4 @@
         "nbParticipants":35,
         "like":false
     }
-]
+]}

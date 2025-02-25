@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import events from '../events.json'
+import events from '../api/db.json'
 function EventDetails(){
     const {name}=useParams();
 

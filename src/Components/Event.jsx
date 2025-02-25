@@ -37,6 +37,7 @@ function Event(props){
                     <p>Number of Participants:{participants}</p>
                     <Button disabled={0} onClick={buy}>Book an event</Button>
                     <Button onClick={likeEvent}>{likeEvent?"Like":"Dislike"}</Button>
+                    <Button className='btn btn-success'>Update</Button>
                 </div>
             </div>
         </div>

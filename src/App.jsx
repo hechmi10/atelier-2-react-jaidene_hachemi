@@ -14,7 +14,7 @@ function App() {
       <Suspense fallback={<div>Loading...</div>}>
       <Routes>
         <Route path="/" element={<Events/>}/>
-        <Route path="/details/:eventName" element={<EventDetails/>}/>
+        <Route path="/details/:name" element={<EventDetails/>}/>
         <Route path="*" element={<NotFound/>}/>
       </Routes>
       </Suspense>

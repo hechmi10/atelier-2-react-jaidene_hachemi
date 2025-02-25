@@ -1,32 +1,54 @@
-{"events":[
+{
+  "events": [
     {
-        "id":1,
-        "name":"ENIMRobots",
-        "description":"ENIMRobots",
-        "img":"../images/event1.jpg",
-        "price":30,
-        "nbTickets":10,
-        "nbParticipants":10,
-        "like":false
+      "id": "1",
+      "name": "ENIMRobots",
+      "description": "ENIMRobots",
+      "img": "../images/event1.jpg",
+      "price": 30,
+      "nbTickets": 10,
+      "nbParticipants": 10,
+      "like": false
     },
     {
-        "id":2,
-        "name":"ENISO Integration Week",
-        "description":"ENISO Integration Week",
-        "img":"../images/event2.jpg",
-        "price":15,
-        "nbTickets":4,
-        "nbParticipants":30,
-        "like":false
+      "id": "2",
+      "name": "ENISO Integration Week",
+      "description": "ENISO Integration Week",
+      "img": "../images/event2.jpg",
+      "price": 15,
+      "nbTickets": 4,
+      "nbParticipants": 30,
+      "like": false
     },
     {
-        "id":3,
-        "name":"RoboCup ENSI",
-        "description":"RoboCup ENSI",
-        "img":"../images/event3.jpg",
-        "price":7,
-        "nbTickets":20,
-        "nbParticipants":35,
-        "like":false
+      "id": "3",
+      "name": "RoboCup ENSI",
+      "description": "RoboCup ENSI",
+      "img": "../images/event3.jpg",
+      "price": 7,
+      "nbTickets": 20,
+      "nbParticipants": 35,
+      "like": false
+    },
+    {
+      "id": "92db",
+      "name": "Ensi Robocup 2017",
+      "description": "Ensi Robocup 2017",
+      "price": "10",
+      "nbTickets": "34",
+      "img": {
+        "0": {}
+      }
+    },
+    {
+      "id": "0f81",
+      "name": "Ensi Robocup 2017",
+      "description": "Ensi Robocup 2017",
+      "price": "10",
+      "nbTickets": "33",
+      "img": {
+        "0": {}
+      }
     }
-]}
+  ]
+}

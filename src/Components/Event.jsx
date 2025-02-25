@@ -2,9 +2,10 @@ import PropTypes from 'prop-types'
 import { useState } from 'react'
 import { Alert, Button } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
+import { deleteEvent } from '../services/api';
 
 function Event(props){
-    let {name,img,price,nbTickets,nbParticipants,like}=props
+    let {id,name,img,price,nbTickets,nbParticipants,like}=props
     let [tickets,setTickets]=useState(nbTickets);
     let [participants,setParticipants]=useState(nbParticipants)
     let [image,setImage]=useState(img);
@@ -24,9 +25,11 @@ function Event(props){
         setLiker(!liker)
         console.log(liker)
     }
+    const onEventDelete=async ()=>{
+        await deleteEvent(id);
+    }
     return(
         <>
-        <Alert onDurationChange={3}>Hey welcome to Engineer School Events</Alert>
         <div className="card">
             <div className="row">
                 <div className="col">
@@ -37,7 +40,8 @@ function Event(props){
                     <p>Number of Participants:{participants}</p>
                     <Button disabled={0} onClick={buy}>Book an event</Button>
                     <Button onClick={likeEvent}>{likeEvent?"Like":"Dislike"}</Button>
-                    <Button className='btn btn-success'>Update</Button>
+                    <Button className='btn btn-success'><NavLink to={`/updateEvent/${id}`} className={({isActive})=>(isActive?"active":"")}>Update</NavLink></Button>
+                    <Button onClick={onEventDelete} className='btn btn-danger'>Delete</Button>
                 </div>
             </div>
         </div>
@@ -46,6 +50,7 @@ function Event(props){
 }
 
 Event.propTypes={
+    id:PropTypes.string.isRequired,
     name:PropTypes.string.isRequired,
     description:PropTypes.string.isRequired,
     img:PropTypes.string.isRequired,

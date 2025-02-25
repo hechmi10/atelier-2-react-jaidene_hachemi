@@ -1,10 +1,12 @@
 import { useParams } from 'react-router-dom';
-import events from '../api/db.json'
+import db from '../api/db.json';
 function EventDetails(){
     const {name}=useParams();
-
-    const event=events[name];
-
+    const events=db.events;
+    const event=events.find((event) => event.name === name)
+    if(!event){
+        alert("Event does not exist");
+    }
     return(
         <div className="container">
         <img src={event.img} alt={event.name}/>

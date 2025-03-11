@@ -24,6 +24,7 @@ function Event(props){
     let likeEvent=()=>{
         setLiker(!liker)
         console.log(liker)
+        return liker;
     }
     const onEventDelete=async ()=>{
         await deleteEvent(id);

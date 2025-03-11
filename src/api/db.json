@@ -49,6 +49,16 @@
       "img": {
         "0": {}
       }
+    },
+    {
+      "id": "f8ee",
+      "name": "Ensi Robocup 2017",
+      "description": "Ensi Robocup 2017",
+      "price": 10,
+      "nbTickets": 10,
+      "img": {
+        "0": {}
+      }
     }
   ]
 }

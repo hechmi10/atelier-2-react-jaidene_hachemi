@@ -54,7 +54,7 @@ Event.propTypes={
     id:PropTypes.string.isRequired,
     name:PropTypes.string.isRequired,
     description:PropTypes.string.isRequired,
-    img:PropTypes.string.isRequired,
+    img:PropTypes.instanceOf(File).isRequired,
     price:PropTypes.number.isRequired,
     nbTickets:PropTypes.number.isRequired,
     nbParticipants:PropTypes.number.isRequired,
